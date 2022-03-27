@@ -47,6 +47,17 @@ h6 {
   margin: 0 auto;
 }
 
+:root {
+  --text-size-medium: 1.6rem;
+}
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .button {
   border-radius: 5rem;
   padding: 1rem 3rem;
@@ -78,14 +89,15 @@ h6 {
 .header__nav {
   margin-right: 28.8vw;
   margin-left: auto;
+  font-size: var(--text-size-medium);
 }
 
 .header__nav a:not(:last-child) {
   margin-right: 7.7rem;
-  font-size: 1.6rem;
 }
+
 .header__nav a {
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   font-weight: 400;
   line-height: 150%;
 }
@@ -98,7 +110,7 @@ h6 {
 
 .header__button {
   background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 150%;
 }
 
@@ -134,7 +146,7 @@ h6 {
 
 .main-display__button {
   background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   font-weight: 700;
   line-height: 150%;
 }
@@ -143,10 +155,6 @@ h6 {
   width: 10.2rem;
   height: 11.2rem;
   background-color: #121212;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .timer__item:not(:last-child) {
@@ -160,7 +168,7 @@ h6 {
 }
 
 .timer__text {
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 140%;
   opacity: 0.4;
 }
@@ -194,7 +202,7 @@ h6 {
 
 .work__description {
   margin: 0;
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 160%;
 }
 
@@ -203,14 +211,21 @@ h6 {
   padding-bottom: 20rem;
 }
 
-.process__img {
+.process .process__img {
   width: 9rem;
   height: 4.5rem;
   transform: rotate(45deg);
 }
 
+.command .process__img {
+  width: 9rem;
+  height: 4.5rem;
+  margin-right: 3.8rem;
+}
+
 .process__header {
   margin-bottom: 4.9rem;
+  padding-top: 1rem;
   font-weight: 700;
   font-size: 4.8rem;
   line-height: 140%;
@@ -223,7 +238,7 @@ h6 {
 .process__description {
   max-width: 41.1rem;
   margin-bottom: 8rem;
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 160%;
   opacity: 0.5;
 }
@@ -233,15 +248,15 @@ h6 {
 }
 
 .process__columns:after {
-  content: '';
+  content: "";
   display: block;
   width: 129.6rem;
-  height: .2rem;
+  height: 0.2rem;
   position: absolute;
   top: 32rem;
   left: 50%;
   transform: translate(-50%, 0);
-  background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
 }
 
 .process_item {
@@ -263,4 +278,96 @@ h6 {
   font-size: 1.4rem;
   line-height: 160%;
   opacity: 0.5;
+}
+
+/* COMMAND */
+command {
+  padding-bottom: 20rem;
+}
+
+.command__title {
+  display: flex;
+  margin-bottom: 11.9rem;
+}
+
+.command__header {
+  margin-bottom: 0;
+  padding-top: 1rem;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 140%;
+}
+
+.command__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 13.6rem;
+}
+
+.command__img {
+  width: 19rem;
+  height: 19rem;
+  margin-bottom: 4rem;
+  border-radius: 50%;
+}
+
+.command__name {
+  margin: 0 0 1.5rem 0;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 140%;
+}
+
+.command__frofession {
+  margin: 0 0 3rem 0;
+  font-weight: 500;
+  font-size: var(--text-size-medium);
+  line-height: 160%;
+}
+
+.command__link {
+  font-size: var(--text-size-medium);
+  line-height: 150%;
+  border: 0.1rem solid #fff;
+}
+
+.assembly {
+  padding: 20rem 0 24.4rem 0;
+}
+
+.assembly__header {
+  margin: 0 0 3rem 0;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 140%;
+}
+
+.assembly__description {
+  margin: 0 0 4.52rem 0;
+  font-size: var(--text-size-medium);
+  line-height: 160%;
+}
+
+.assembly__button {
+  margin: 0 0 5.8rem 0;
+  font-weight: 700;
+  font-size: var(--text-size-medium);
+  line-height: 150%;
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+}
+
+.assembly__socials {
+  display: flex;
+}
+
+.assembly__item {
+  padding: 1.3rem;
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.assembly__item:not(:last-child) {
+  margin: 0 3rem 0 0;
 }
