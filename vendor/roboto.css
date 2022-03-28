@@ -8,6 +8,15 @@
 }
 
 @font-face {
+  font-family: 'Roboto';
+  src:  url(../fonts/Roboto-Medium.eot) format('embedded-opentype'),
+        url(../fonts/Roboto-Medium.woff) format('woff'),
+        url(../fonts/Roboto-Medium.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
     font-family: 'Roboto';
     src: url(../fonts/Roboto-Bold.eot) format('embedded-opentype'),
          url(../fonts/Roboto-Bold.woff) format('woff'),
